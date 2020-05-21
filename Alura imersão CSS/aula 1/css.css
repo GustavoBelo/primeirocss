@@ -1,0 +1,318 @@
+/*reset do css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mediumslateblue;
+    font-family: 'Source Code Pro', monospace;
+    text-align: flex;
+    height: 10vh;
+    font-size: 14px;
+}
+
+
+/*IF DO CSS 
+( se a tela tiver pelo menos 400px, ela carrega os estilos a seguir) */
+
+@media(min-width: 400px) {
+    body {
+        font-size: 16px;
+        background-size: 50vh 50vh;
+    }
+}
+
+@media(min-width: 500px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 560px) {
+    .portifolio .grid {
+        grid-template-columns: 240px 240px;
+        justify-content: center;
+    }
+}
+
+@media(min-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 900px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+@media(min-width: 880px) {
+    .portifolio .grid {
+        align-content: center;
+        grid-template-columns: repeat(3, 260px);
+        justify-content: center;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+
+@media(min-width: 1200px) {
+    body {
+        font-size: 25px;
+    }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+}
+
+header {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio {
+    background-image: url(https://i.ytimg.com/vi/0p8neomjH_Q/maxresdefault.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.8);
+    font-family: 'Special Elite', cursive;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.menu a {
+    display: block;
+    padding: 10px 40px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+a {
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+    transition: text-shadow 1s, color 0.5s;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+a:active {
+    text-shadow: 0px 0px 8px;
+}
+
+.gus {
+    animation: cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.5s animacaoGus forwards;
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+}
+
+@keyframes animacaoGus {
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.site-title,
+.site-subtitle {
+    color: white;
+    text-align: center;
+}
+
+.site-subtitle {
+    font-family: 'Indie Flower', cursive;
+}
+
+.site-title {
+    font-size: 4em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.sobre .avatar {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    float: left;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 2s;
+}
+
+.sobre .avatar:hover {
+    transform: scale(1.1);
+}
+
+.sobre {
+    background-color: wheat;
+    padding: 1.4em 1.3em;
+    min-height: 100vh;
+}
+
+.sobre p {
+    margin-bottom: 0.6em;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+.inicio,
+.sobre,
+.portifolio,
+.contato {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portifolio {
+    background-color: lightpink;
+    padding: 1.4em 1.3em;
+    min-height: 100vh;
+}
+
+.sobre h2,
+.portifolio h2 {
+    font-family: 'Special Elite', cursive;
+    color: black;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.imersao {
+    color: darkblue;
+}
+
+.imersao:hover {
+    color: darkblue;
+}
+
+.portifolio .grid {
+    display: grid;
+    gap: 3em;
+    border-bottom: 3em;
+}
+
+.portifolio figure {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.img-portifolio {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: 10%; para fazer borda hehe*/
+    transition: transform 0.5s;
+}
+
+
+/* .img-portifolio:hover {
+    transform: scale(1.5) rotate(2deg);
+} */
+
+.flip-card {
+    perspective: 500px;
+    height: 250px;
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+}
+
+.flip-card:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    font-size: 0.75em;
+    text-align: justify;
+    transform: rotateY(180deg);
+}
+
+.card-back a {
+    color: black;
+}
+
+.card-back a:hover {
+    text-decoration: underline;
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.contato {
+    background-color: lightyellow;
+    box-shadow: 9px 9px 18px 3px rgba(0, 0, 0, .25);
+    padding: 1.4em 1.3em;
+    min-height: 6vh;
+}
+
+.contato-title {
+    font-family: 'Special Elite', cursive;
+    color: black;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.contato a {
+    color: black;
+    font-size: 5em;
+    gap: 2em;
+    justify-content: right;
+    transition: text-shadow 0.5s;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-container .nome-icon {
+    color: black;
+    font-size: 0.12em;
+    padding: 10px 10px;
+    justify-content: space-around;
+    text-align: center;
+    text-shadow: none;
+}
+
+.grid-container .nome-icon:hover {
+    text-decoration: underline;
+}
+
+.contato a:hover {
+    text-shadow: 5px 5px 1px mediumpurple;
+}
