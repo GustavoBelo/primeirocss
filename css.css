@@ -231,6 +231,9 @@ a:active {
     transition: transform 0.5s;
 }
 
+.grid p {
+    text-align: center;
+}
 
 /* .img-portifolio:hover {
     transform: scale(1.5) rotate(2deg);
