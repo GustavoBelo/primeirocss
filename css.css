@@ -1,0 +1,755 @@
+/*reset do css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: mediumslateblue;
+    font-family: 'Source Code Pro', monospace;
+    text-align: flex;
+    font-size: 14px;
+}
+
+
+/*IF DO CSS 
+( se a tela tiver pelo menos 400px, ela carrega os estilos a seguir) */
+
+@media (min-width: 320px) and (max-height: 500px) and (min-height: 450px) {
+    body {
+        font-size: 14px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 95vh;
+    }
+    .contato a {
+        font-size: 4.7em;
+    }
+    .sobre .avatar {
+        height: 140px;
+        width: 140px;
+    }
+}
+
+@media (min-width: 639px) and (max-height: 361px) {
+    body {
+        font-size: 14px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 110vh;
+    }
+    .contato a {
+        font-size: 4.7em;
+    }
+    .sobre .avatar {
+        height: 140px;
+        width: 140px;
+    }
+    .grid-container {
+        font-size: 2em;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 600px) and (max-height: 380px) {
+    body {
+        font-size: 14px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 95vh;
+    }
+    .contato a {
+        font-size: 4.7em;
+    }
+    .sobre .avatar {
+        height: 140px;
+        width: 140px;
+    }
+    .grid-container {
+        font-size: 1.3em;
+        justify-content: center;
+    }
+    .contato {
+        height: 300px;
+    }
+}
+
+@media (min-width: 730px) and (max-height: 420px) {
+    body {
+        font-size: 14px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 95vh;
+    }
+    .contato a {
+        font-size: 4.7em;
+    }
+    .sobre .avatar {
+        height: 140px;
+        width: 140px;
+    }
+    .grid-container {
+        font-size: 1.3em;
+        justify-content: center;
+    }
+    .contato {
+        height: 300px;
+    }
+}
+
+@media (min-width: 810px) and (max-height: 380px) {
+    body {
+        font-size: 14px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 95vh;
+    }
+    .contato a {
+        font-size: 4.7em;
+    }
+    .sobre .avatar {
+        height: 140px;
+        width: 140px;
+    }
+    .grid-container {
+        font-size: 1.3em;
+        justify-content: center;
+    }
+    .contato {
+        height: 300px;
+    }
+}
+
+@media (min-width: 470px) and (max-height: 330px) {
+    body {
+        font-size: 14px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 385px;
+    }
+    .contato a {
+        font-size: 4.7em;
+    }
+    .sobre .avatar {
+        height: 140px;
+        width: 140px;
+    }
+    .grid-container {
+        font-size: 1.3em;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 320px) and (min-height: 500px) and (max-height: 600px) {
+    body {
+        font-size: 15px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 80vh;
+    }
+    .grid-container {
+        font-size: 13px;
+        justify-content: center;
+    }
+    .sobre .avatar {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 350px) and (min-height: 600px) and (max-height: 670px) {
+    body {
+        font-size: 18px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 90vh;
+    }
+    .grid-container {
+        font-size: 15px;
+        justify-content: center;
+    }
+    .nome-icon {
+        font-size: 6px;
+    }
+    .sobre .avatar {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 410px) and (min-height: 670px) and (max-height: 740px) {
+    body {
+        font-size: 18px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 75vh;
+    }
+    .grid-container {
+        font-size: 18px;
+        height: 15vh;
+        justify-content: center;
+    }
+    .nome-icon {
+        font-size: 6px;
+    }
+    .sobre .avatar {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 370px) and (min-height: 740px) and (max-height: 820px) {
+    body {
+        font-size: 24px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 75vh;
+    }
+    .grid-container {
+        font-size: 25px;
+        justify-content: center;
+    }
+    .nome-icon {
+        font-size: 8px;
+    }
+    .sobre .avatar {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 350px) and (max-height: 650px) and (min-height: 700px) {
+    body {
+        font-size: 17px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 95vh;
+    }
+    .grid-container {
+        font-size: 15px;
+        height: 15vh;
+        justify-content: center;
+    }
+    .nome-icon {
+        font-size: 8px;
+    }
+    .sobre .avatar {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 480px) and (max-height: 860px) and (min-height: 650) {
+    body {
+        font-size: 25px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .sobre {
+        height: 95vh;
+    }
+    .contato {
+        height: 60vh;
+    }
+    .grid-container {
+        font-size: 20px;
+        height: 20vh;
+        justify-content: center;
+    }
+    .nome-icon {
+        font-size: 8px;
+    }
+    .sobre .avatar {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 760px) and (max-height: 1030px) and (min-height: 1000px) {
+    body {
+        font-size: 25px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .flip-card {
+        height: 150%;
+    }
+    .sobre {
+        height: 70vh;
+    }
+    .contato {
+        height: 60vh;
+    }
+    .grid-container {
+        justify-content: center;
+        font-size: 30px;
+        height: 20vh;
+    }
+    .nome-icon {
+        font-size: 8px;
+    }
+    .sobre .avatar {
+        height: 280px;
+        width: 280px;
+    }
+    .grid {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 850px) and (max-height: 500px) and (min-height: 450px) {
+    body {
+        font-size: 25px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .flip-card {
+        height: 150%;
+    }
+    .sobre {
+        height: 700px;
+    }
+    .contato {
+        height: 70vh;
+    }
+    .grid-container {
+        justify-content: center;
+        font-size: 20px;
+        height: 20vh;
+    }
+    .nome-icon {
+        font-size: 8px;
+    }
+    .sobre .avatar {
+        height: 280px;
+        width: 280px;
+    }
+    .grid {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1370px) and (max-height: 1020px) {
+    body {
+        font-size: 30px;
+    }
+    .site-title {
+        font-size: 2.5em;
+    }
+    .inicio {
+        height: 72vh;
+    }
+    .flip-card {
+        height: 500px;
+        width: 500px;
+    }
+    .sobre {
+        height: 65vh;
+    }
+    .contato {
+        height: 30vh;
+    }
+    .grid-container {
+        font-size: 30px;
+        height: 20vh;
+    }
+    .nome-icon {
+        font-size: 8px;
+    }
+    .sobre .avatar {
+        height: 340px;
+        width: 340px;
+    }
+    .grid {
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 1200px) and (min-height: 610px) {
+    body {
+        font-size: 30px;
+    }
+    .container-menu {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+    .container {
+        box-shadow: 9px 9px 18px 3px rgba(0, 0, 0, .25);
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+    .sobre {
+        height: 900px;
+    }
+    .inicio {
+        height: 100vh;
+    }
+    .site-title {
+        font-size: 4em;
+    }
+    .sobre.avatar {
+        height: 280px;
+        width: 280px;
+    }
+    .sobre h2,
+    .portifolio .sobre-title {
+        font-size: 2em;
+    }
+    .grid {
+        justify-content: space-around;
+    }
+    .card-back {
+        height: 200px;
+    }
+    .contato a {
+        gap: 2em;
+    }
+    .contato {
+        height: 500px;
+    }
+    .grid-container {
+        justify-content: space-around;
+    }
+    .flip-card {
+        margin-bottom: 1em;
+    }
+}
+
+.inicio {
+    align-items: center;
+    background-color: black;
+    background-size: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    background: rgba(0, 0, 0, 0.8);
+    font-family: 'Special Elite', cursive;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+a {
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+    transition: text-shadow 1s, color 0.5s;
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+a:active {
+    text-shadow: 0px 0px 8px;
+}
+
+.gus {
+    animation: cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.5s animacaoGus forwards;
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+}
+
+@keyframes animacaoGus {
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.site-title,
+.site-subtitle {
+    color: white;
+    text-align: center;
+}
+
+.site-subtitle {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.site-title {
+    font-family: 'MontSerrat', sans-serif;
+}
+
+.sobre .avatar {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+    transition: transform 2s;
+}
+
+.sobre .avatar:hover {
+    transform: scale(1.1);
+}
+
+.sobre {
+    background-color: wheat;
+    padding: 1.4em 1.3em;
+}
+
+.sobre p {
+    margin-bottom: 0.6em;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+
+.inicio,
+.sobre,
+.portifolio,
+.contato {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portifolio {
+    background-color: lightpink;
+    padding: 1.4em 1.3em;
+    min-height: 100vh;
+}
+
+.sobre h2,
+.portifolio .sobre-title {
+    font-family: 'Special Elite', cursive;
+    color: black;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.imersao {
+    color: darkblue;
+}
+
+.imersao:hover {
+    color: darkblue;
+}
+
+.portifolio .grid {
+    display: grid;
+    gap: 3em;
+    border-bottom: 3em;
+}
+
+.portifolio figure {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.img-portifolio {
+    box-shadow: 9px 9px 18px 3px rgba(0, 0, 0, .25);
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    text-align: center;
+    border-radius: 8%;
+    transition: transform 0.5s;
+}
+
+
+/* .img-portifolio:hover {
+    transform: scale(1.5) rotate(2deg);
+} */
+
+.flip-card {
+    perspective: 500px;
+    height: 250px;
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+}
+
+.flip-card:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-back {
+    border-radius: 8%;
+    box-shadow: 9px 9px 18px 3px rgba(0, 0, 0, .25);
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+
+.card-back p {
+    font-size: 15px;
+    text-indent: 1.5em;
+    text-align: justify;
+    padding: 1em;
+}
+
+.card-back a {
+    color: black;
+}
+
+.card-back a:hover {
+    text-decoration: underline;
+}
+
+.card-front,
+.card-back {
+    backface-visibility: hidden;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.contato {
+    background-color: lightyellow;
+    box-shadow: 9px 9px 18px 3px rgba(0, 0, 0, .25);
+    padding: 1.4em 1.3em;
+    min-height: 6vh;
+}
+
+.contato-title {
+    font-family: 'Special Elite', cursive;
+    color: black;
+    margin-bottom: 1em;
+    margin-top: 0.6em;
+    text-align: center;
+    font-size: 2em;
+}
+
+.contato a {
+    color: black;
+    font-size: 4.5em;
+    justify-content: right;
+    margin-left: 0.3em;
+    position: relative;
+    text-align: center;
+    transition: text-shadow 0.5s;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 240px;
+    transform-style: preserve-3d;
+}
+
+.grid-container .nome-icon {
+    color: black;
+    font-size: 0.16em;
+    justify-content: space-around;
+    padding: 10px 10px;
+    text-align: center;
+    text-shadow: none;
+}
+
+.grid-container .nome-icon:hover {
+    text-decoration: underline;
+}
+
+.contato a:hover {
+    text-shadow: 5px 5px mediumpurple;
+}
